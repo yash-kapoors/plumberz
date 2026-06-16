@@ -270,7 +270,32 @@ i{
 .fact {
     background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../images/bg.jpg) center center no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 40vh;
+    margin-top: 150px;
 }
+.dis{
+    padding: 20px 50px ;
+}
+.experience{
+    margin-top: 80px;
+}
+.bluebox{
+    background-color: #1E60AA;
+    width: 25%;
+    height: 80vh;
+    position: relative;
+}
+.bluebox h2{
+    font-size: 60px;
+    transform: rotate(270deg);
+    position: absolute;
+    top: 180px;
 
-
+}
+.vertical-experience-text {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  white-space: nowrap; /* Keeps the words on a single line */
+}
 
