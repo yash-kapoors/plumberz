@@ -300,4 +300,71 @@ i{
   transform: rotate(180deg);
   white-space: nowrap; /* Keeps the words on a single line */
 }
+.service-carousel .owl-dot {
+    position: relative!important;
+    display: inline-block!important;
+    width: 15px!important;
+    height: 15px!important;
+    margin: 0px 5px!important;
+    background: #1E60AA!important;
+    border: 5px solid #EDF1FC!important;
+    transition: 0.5s!important;
+}
+.owl-carousel .owl-dot, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
+    cursor: pointer;
+    user-select: none;
+}
+ 
 
+.service-carousel .owl-dots {
+    margin-top: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.service-carousel .owl-dot.active {
+    background: #EDF1FC!important;
+    border-color: #1E60AA!important;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: unset;
+}
+.owl-theme .owl-dots .owl-dot span {
+    background: unset;
+}
+.video{
+    position: relative;
+}
+.video::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7));
+}
+.video .back{
+    width: 100%;
+    height: 70vh;
+}
+.video{
+    position: relative;
+}
+
+.content-class{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    z-index: 3;
+    font-weight: 700;
+}
+.content-class p{
+    text-align: center;
+}
+.video .front{
+    width: 30%;
+    height: 20vh;
+}
