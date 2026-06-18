@@ -365,6 +365,10 @@ i{
     text-align: center;
 }
 .video .front{
-    width: 30%;
-    height: 20vh;
+    width: 40%;
+    height: 15vh;
+    margin-bottom: 30px;
+}
+.play-button{
+    padding-left: 150px;
 }
