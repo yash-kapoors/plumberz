@@ -355,7 +355,7 @@ i{
 .content-class{
     position: absolute;
     left: 50%;
-    top: 70%;
+    top: 40%;
     transform: translate(-50%,-50%);
     color: #fff;
     z-index: 3;
@@ -372,3 +372,36 @@ i{
 .play-button{
     padding-left: 150px;
 }
+/* .design{
+    width: 60%;
+    background-color: #ff4917;
+    height: 60vh;
+    align-items: center;
+    position: relative;
+} */
+.design {
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+    min-height: 100vh;
+    margin-top: -240px;
+    z-index: 3;
+   
+}
+
+.des {
+    width: 800px;
+    z-index: 4;
+     background-color: #edf1fc;
+     padding: 40px;
+     text-align: center;
+     margin-bottom: 20px;
+}
+
+.form-control, .form-select{
+    height: 54px;
+}
+
+/* .text-lg-start {
+    text-align: center !important;
+} */
