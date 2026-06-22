@@ -355,7 +355,7 @@ i{
 .content-class{
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 50%;
     transform: translate(-50%,-50%);
     color: #fff;
     z-index: 3;
@@ -435,9 +435,7 @@ i{
 
 
 
-.play-button {
-    position: relative;
-}
+
 
 .play-button a{
     position: absolute;
@@ -445,7 +443,7 @@ i{
     width: 100px;
     height: 100px;
     left: 50%;
-    top: 50%;
+    top: -80%;
     transform: translateX(-50%) translateY(-50%);
 }
 .play-button a:before {
@@ -462,6 +460,92 @@ i{
     border-radius: 50%;
     animation: pulse-border 1500ms ease-out infinite;
 }
+.feedback{
+    position: relative;
+}
+.testimonial-carousel .owl-nav {
+    position: absolute;
+    width: 350px;
+    bottom: 100px;
+    left: 80%!important;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    transition: .5s;
+    z-index: 1;
+    align-items: center;
+}
+.owl-carousel .owl-item img {
+    width: unset;
+}
+.clients img {
+    border-radius: 50%;
+    padding-inline: 135px;
+}
+.footer{
+    background-color: #143861!important;
+    color: #fff;
+}
+.footer a{
+    color: #fff;
+    text-decoration: none;
+}
+.last{
+    border-bottom: 2px solid #fff;
+}
+
+.icons-con{
+    display: flex!important;
+    gap: 10px!important;
+}
+
+.icons-con a{
+    border: 1px solid #fff;
+    padding: 2px 5px;
+    border-radius: 50%;
+}
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../images/bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.header-carousel .container, .page-header .container {
+    position: relative;
+    padding: 45px 0 45px 35px;
+    border-left: 15px solid #FFFFFF;
+}
+.header-carousel .container::after, .page-header .container::after {
+    position: absolute;
+    content: "";
+    top: 208px;
+    left: 0;
+    width: 100px;
+    height: 15px;
+    background: #FFFFFF;
+}
+.header-carousel .container::before, .page-header .container::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 15px;
+    background: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes pulse-border {
     0% {
