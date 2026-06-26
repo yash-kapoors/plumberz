@@ -20,7 +20,7 @@
 }
 .top-bar {
     height: 75px;
-    padding: 0 4rem;
+    /* padding: 0 4rem; */
     align-items: center;
     justify-content: center;
     background-color: #edf1fc;
@@ -33,10 +33,14 @@ i{
     padding-top: 2px;
 }
 
+.top-nav{
+    background-color: #edf1fc;
+}
+
 .navbar{
-    padding-left: 40px;
-    padding-top: 0;
-    padding-bottom: 0;
+    /* padding-left: 40px; */
+    /* padding-top: 0;
+    padding-bottom: 0; */
 }
 .navbar-nav{
     text-transform: capitalize;
@@ -144,7 +148,7 @@ i{
 
 .boundary {
     background-color: #edf1fc !important;
-    padding: 0 80px;
+    padding: 0 100px;
     transition: all 0.4s ease;
 }
 
@@ -200,8 +204,8 @@ i{
     display: none;
 }
 
-.owl-nav button.owl-prev::before {
-    content: "\f053"; /* fa-chevron-left */
+/* .owl-nav button.owl-prev::before {
+    content: "\f053"; 
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     position: absolute;
@@ -215,7 +219,7 @@ i{
 }
 
 .owl-nav button.owl-next::before {
-    content: "\f054"; /* fa-chevron-right */
+    content: "\f054"; 
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     position: absolute;
@@ -226,11 +230,24 @@ i{
     border-radius: 50%;
     font-size: 25px;
     padding: 2px 15px;
-}
+} */
 
-.owl-nav button {
-    font-size: 24px;
-    color: #333;
+.owl-nav {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+right: 100px;
+display: flex;
+gap: 10px;
+flex-direction: column;
+}
+.owl-nav button{
+    background: #FF4917 !important;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .tab{
     background-color: #edf1fc!important;
@@ -534,7 +551,11 @@ i{
     background: #FFFFFF;
 }
 
-
+div#navbarNavDropdown{
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
 
 
 
@@ -556,5 +577,12 @@ i{
     100% {
         transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
         opacity: 0;
+    }
+}
+
+
+@media (max-width:991px){
+    .navbar.bg-white{
+        background: none !important;
     }
 }
